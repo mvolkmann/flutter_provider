@@ -48,16 +48,19 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text('My Demo'),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            PlayerEntry(),
-            SizedBox(height: 10),
-            ScoreEntry(),
-            SizedBox(height: 10),
-            Text('Number of scores = ${gameState.count}'),
-            ScoreReport(),
-          ],
+        child: Padding(
+          padding: EdgeInsets.all(10),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              PlayerEntry(),
+              SizedBox(height: 10),
+              ScoreEntry(),
+              SizedBox(height: 10),
+              Text('Number of scores = ${gameState.count}'),
+              ScoreReport(),
+            ],
+          ),
         ),
       ),
     );
